@@ -1,5 +1,5 @@
 #Data Peocessing
-setwd("C://Vivek//Learning//Udemy Machine Learning")
+setwd("C://Vivek//Learnings//Machine Learning Udemy")
 
 #Read Data Set
 dataset = read.csv("Social_Network_Ads.csv")
@@ -31,7 +31,7 @@ y_pred = ifelse(prob_pred > 0.5, 1, 0)
 cm = table(test_set[,3], y_pred)
 
 #Vizualizing 
-install.packages('ElemStatLearn')
+#install.packages('ElemStatLearn')
 set = training_set
 X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
 X2 = seq(min(set[, 2]) - 1, max(set[, 2]) + 1, by = 0.01)
